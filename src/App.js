@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>Wonders:</h1>
-      <WonderCard name='wonder 1' dateBuilt='2001' imgLink='https://picsum.photos/300/200'/><br/>
-      <WonderCard name='wonder 2' dateBuilt='2001' imgLink='https://picsum.photos/300/200'/><br/>
-      <WonderCard name='wonder 3' dateBuilt='2001' imgLink='https://picsum.photos/300/200'/>
+      <WonderCard name='wonder 1' location='india' imgLink='https://picsum.photos/300/200'/><br/>
+      <WonderCard name='wonder 2' location='india' imgLink='https://picsum.photos/300/200'/><br/>
+      <WonderCard name='wonder 3' location='india' imgLink='https://picsum.photos/300/200'/>
     </div>
   );
 }
