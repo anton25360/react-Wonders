@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './WonderCard.css';
 
 export class WonderCard extends Component {
     render() {
         return (
-            <div>
+            <div className='cardContainer'>
                 <h1>{this.props.name} in {this.props.dateBuilt}</h1>
             </div>
         )
