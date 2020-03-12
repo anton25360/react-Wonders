@@ -6,8 +6,9 @@ export class WonderCard extends Component {
         return (
             <div className='cardContainer'>
                 <img className='cardBackground' src={this.props.imgLink} alt='background'/>
+                <h2 className='cardLocation'>{this.props.location}</h2>
                 <h1 className='cardName'>{this.props.name}</h1>
-                <h1 className='cardLocation'>{this.props.location}</h1>
+
             
             </div>
         )
