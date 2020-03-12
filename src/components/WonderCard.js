@@ -5,7 +5,7 @@ export class WonderCard extends Component {
     render() {
         return (
             <div className='cardContainer'>
-                <img src={this.props.imgLink} alt='image' />
+                <img src={this.props.imgLink} alt='background'/>
                 <h1 className='cardTitle'>{this.props.name} in {this.props.dateBuilt}</h1>
             </div>
         )
