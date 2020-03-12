@@ -4,10 +4,6 @@ import WonderCard from './components/WonderCard'
 
 function App() {
 
-  let images = [
-    'https://www.worldatlas.com/r/w728/upload/18/ec/64/shutterstock-356871482.jpg'
-  ]
-
   return (
     <div className="App">
       <h1>Wonders:</h1>
