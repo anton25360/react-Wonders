@@ -4,7 +4,7 @@ export class WonderCard extends Component {
     render() {
         return (
             <div>
-                <h1>hello there i am a thing</h1>
+                <h1>name: {this.props.name}</h1>
             </div>
         )
     }

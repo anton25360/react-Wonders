@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <h1>Wonders:</h1>
-      <WonderCard/>
-      <WonderCard/>
-      <WonderCard/>
+      <WonderCard name='wonder 1'/>
+      <WonderCard name='wonder 2'/>
+      <WonderCard name='wonder 3'/>
     </div>
   );
 }
