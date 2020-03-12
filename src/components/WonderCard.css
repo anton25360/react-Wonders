@@ -3,13 +3,10 @@
     border: 2px solid black;
     display: inline-block;
     margin: 20px;
-    /* text-align: left !important; */
 }
 
 .cardTitle{
     border: 2px solid blue;
-    /* display: inline-block; */
-    /* width: auto; */
     text-align: left;
 
 }
