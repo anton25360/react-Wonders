@@ -4,7 +4,7 @@ export class WonderCard extends Component {
     render() {
         return (
             <div>
-                <h1>name: {this.props.name}</h1>
+                <h1>{this.props.name} in {this.props.dateBuilt}</h1>
             </div>
         )
     }
