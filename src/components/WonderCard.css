@@ -6,11 +6,13 @@
     display: inline-block;
     margin: 20px;
     border-radius: 5px;
+    width: 400px;
 }
 
 .cardBackground{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 100%;
 
 }
 
@@ -30,3 +32,14 @@
     color: rgb(109, 109, 109);
     font-size: 17px;
 }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .cardContainer {
+      width: 300px;
+    }
+
+    /* body{
+        background-color: lightcoral;
+    } */
+  }

@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>Wonders:</h1>
       <WonderCard name='Taj Mahal' location='India' imgLink='https://picsum.photos/300/200'/><br/>
-      <WonderCard name='Colosseum' location='Italy' imgLink='https://picsum.photos/300/200'/><br/>
+      <WonderCard name='Colosseum' location='Italy' imgLink='https://www.worldatlas.com/r/w728/upload/55/2c/54/shutterstock-433413835.jpg'/><br/>
       <WonderCard name='Chichen Itza' location='Mexico' imgLink='https://picsum.photos/300/200'/><br/>
       <WonderCard name='Machu Picchu' location='Peru' imgLink='https://picsum.photos/300/200'/><br/>
       <WonderCard name='Christ the Redeemer' location='Brazil' imgLink='https://picsum.photos/300/200'/><br/>
