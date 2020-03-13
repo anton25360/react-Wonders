@@ -17,17 +17,25 @@
 
 }
 
+.cardLocation{
+    padding: 5px 0 0 10px;
+    /* border: 2px solid red; */
+    text-align: left;
+    color: rgb(109, 109, 109);
+    font-size: 17px;
+}
+
 .cardName{
     /* padding: 5px 0 0 10px; */
-    padding: 3px 0 10px 10px;
+    padding: 3px 0 1px 10px;
 
     /* border: 2px solid blue; */
     text-align: left;
     font-size: 23px;
 }
 
-.cardLocation{
-    padding: 5px 0 0 10px;
+.cardInfo{
+    padding: 5px 10px 10px 10px;
     /* border: 2px solid red; */
     text-align: left;
     color: rgb(109, 109, 109);
