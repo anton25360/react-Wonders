@@ -5,8 +5,8 @@ export class IntroCard extends Component {
     render() {
         return (
             <div className='introContainer'>
-                <h1 className='introName'>hello there</h1>
-                <p className='introInfo'>Although the Great Pyramid of Giza was not officially selected as one of the new seven wonders of the world, it was assigned an honorary title because of its undeniable importance. The Great Pyramid of Giza is the biggest and the oldest one among the three pyramids forming the Giza Pyramid Complex.</p>
+                <h1 className='introName'>Welcome to Wonders.</h1>
+                <p className='introInfo'><br/>Here you can find information on all 7 (new) wonders of the world. You can also install 'Wonders' as a native app by clicking on Share > Add to Home Screen.<br/><br/>Enjoy!</p>
             </div>
         )
     }
