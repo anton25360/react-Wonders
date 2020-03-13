@@ -14,16 +14,26 @@ import great from './res/great.jpg';
 
 function App() {
 
+  let content = [
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven'
+  ]
+
   return (
     <div className="App">
       <IntroCard /><br/>
-      <WonderCard name='Taj Mahal' location='India' imgLink={taj}/><br/>
-      <WonderCard name='Colosseum' location='Italy' imgLink={colosseum}/><br/>
-      <WonderCard name='Chichen Itza' location='Mexico' imgLink={chichen}/><br/>
-      <WonderCard name='Machu Picchu' location='Peru' imgLink={machu}/><br/>
-      <WonderCard name='Christ the Redeemer' location='Brazil' imgLink={christ}/><br/>
-      <WonderCard name='Petra' location='Jordan' imgLink={petra}/><br/>
-      <WonderCard name='Great Wall of China' location='China' imgLink={great}/>
+      <WonderCard name='Taj Mahal' location='India' imgLink={taj} info={content[0]}/><br/>
+      <WonderCard name='Colosseum' location='Italy' imgLink={colosseum} info={content[1]}/><br/>
+      <WonderCard name='Chichen Itza' location='Mexico' imgLink={chichen} info={content[2]}/><br/>
+      <WonderCard name='Machu Picchu' location='Peru' imgLink={machu} info={content[3]}/><br/>
+      <WonderCard name='Christ the Redeemer' location='Brazil' imgLink={christ} info={content[4]}/><br/>
+      <WonderCard name='Petra' location='Jordan' imgLink={petra} info={content[5]}/><br/>
+      <WonderCard name='Great Wall of China' location='China' imgLink={great} info={content[6]}/>
     </div>
   );
 }
