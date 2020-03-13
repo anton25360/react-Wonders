@@ -4,6 +4,12 @@
     width: 400px;
 }
 
+.introGradient{
+    background: -webkit-linear-gradient(left, #7656a4, #c785ae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .introName{
     margin-top: 20px;
     text-align: left;
