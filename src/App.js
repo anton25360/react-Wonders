@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import WonderCard from './components/WonderCard'
+import IntroCard from './components/IntroCard'
 
 //background images
 import taj from './res/taj.jpg';
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Wonders:</h1>
+      <IntroCard />
       <WonderCard name='Taj Mahal' location='India' imgLink={taj}/><br/>
       <WonderCard name='Colosseum' location='Italy' imgLink={colosseum}/><br/>
       <WonderCard name='Chichen Itza' location='Mexico' imgLink={chichen}/><br/>
