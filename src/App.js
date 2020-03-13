@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <IntroCard />
+      <IntroCard /><br/>
       <WonderCard name='Taj Mahal' location='India' imgLink={taj}/><br/>
       <WonderCard name='Colosseum' location='Italy' imgLink={colosseum}/><br/>
       <WonderCard name='Chichen Itza' location='Mexico' imgLink={chichen}/><br/>
