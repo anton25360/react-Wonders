@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import WonderCard from './components/WonderCard'
 import IntroCard from './components/IntroCard'
+import WonderCount from './components/WonderCount'
 
 //background images
 import taj from './res/taj.jpg';
@@ -34,6 +35,7 @@ function App() {
       <WonderCard num='5' visited={false} name='Christ the Redeemer' location='Brazil' imgLink={christ} info={content[4]}/><br/>
       <WonderCard num='6' visited={false} name='Petra' location='Jordan' imgLink={petra} info={content[5]}/><br/>
       <WonderCard num='7' visited={false} name='Great Wall of China' location='China' imgLink={great} info={content[6]}/>
+      <WonderCount />
     </div>
   );
 }
