@@ -16,12 +16,19 @@ function markButton(input) {
 //delete localstorage (num : seen)
 function removeFromStorage(input) {
     localStorage.removeItem(input)
+
+    document.getElementById(input).innerText = 'Mark as visited'
+    document.getElementById(input).classList.remove("visited");
+    //show revert button
+    document.getElementById(input + 'revert').style.visibility = 'hidden'
+    // alert('hehe')
+
 }
 
 export class WonderCard extends Component {
 
     //marks as seen if 'seen' propery exists onLoad
-    componentDidMount(){
+    componentDidMount() {
         if (localStorage.getItem(this.props.num) === 'seen') {
             document.getElementById(this.props.num).innerText = visitedMsg
             document.getElementById(this.props.num).classList.add("visited");
@@ -31,7 +38,6 @@ export class WonderCard extends Component {
         } else {
             //hide revert button
             document.getElementById(this.props.num + 'revert').style.visibility = 'hidden'
-
         }
     }
 
@@ -41,9 +47,9 @@ export class WonderCard extends Component {
                 <img className='cardBackground' src={this.props.imgLink} alt='background' />
                 <h2 className='cardLocation'>{this.props.location}</h2>
                 <h1 className='cardName'>{this.props.name}</h1>
-                <p className='cardInfo'>{this.props.info}</p>    
-                <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as visited</button>
-                <button onClick={()=>{removeFromStorage(this.props.num)}} class='revertBtn' id={this.props.num + 'revert'}>Revert</button>
+                <p className='cardInfo'>{this.props.info}</p>
+                <button onClick={() => { markButton(this.props.num) }} className='markBtn' id={this.props.num}>Mark as visited</button>
+                <button onClick={() => { removeFromStorage(this.props.num) }} class='revertBtn' id={this.props.num + 'revert'}>Revert</button>
             </div>
         )
     }
