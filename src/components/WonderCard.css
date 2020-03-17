@@ -47,6 +47,21 @@
     text-align: left;
     color: rgb(86, 192, 65);
     font-size: 17px;
+    /* background-color: lightgreen; */
+}
+
+.markBtn{
+    background-color: lightgreen;
+    margin: 0 10px 10px 10px;
+    float: left;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.revert{
+    background-color: coral;
 }
 
 /* mobile */
