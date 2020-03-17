@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './WonderCard.css';
-import check from './../res/check.svg';
 
-let visitedMsg = 'You have visited it!'
+let visitedMsg = 'Visited!'
 
 //marks as seen when user clicks
 function markButton(input) {
@@ -26,11 +25,9 @@ export class WonderCard extends Component {
             <div className='cardContainer'>
                 <img className='cardBackground' src={this.props.imgLink} alt='background' />
                 <h2 className='cardLocation'>{this.props.location}</h2>
-                <h1 className='cardName'>{this.props.name} {<img className='checkIcon' src={check}/>}</h1>
+                <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>    
-                {/* <p onClick={()=>{markSeen(this.props.num)}} className='cardMark' id={this.props.num}>Mark as seen.</p> */}
-                <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as seen.</button>
-                {/* <button className='markBtn'>Mark as seen</button> */}
+                <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as visited.</button>
             </div>
         )
     }
