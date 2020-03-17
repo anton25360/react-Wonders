@@ -12,7 +12,7 @@ function getVisitedCount() {
         return ' You have visited ' + visitedCount + ' Wonder. Nice!'
     } else {
         let math = visitedCount / 7 * 100
-        return ' You have visited ' + visitedCount + ' Wonders. (x% done) ' + math
+        return ' You have visited ' + visitedCount + ' Wonders. ('+math.toFixed(0)+'% done)'
     }
 }
 
