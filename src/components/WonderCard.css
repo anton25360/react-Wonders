@@ -44,6 +44,8 @@
     border: none;
     border-radius: 3px;
     background-image:linear-gradient(135deg,rgb(236, 108, 108),#FFB88C);
+    outline-width: 0;
+
 }
 
 .visited{
