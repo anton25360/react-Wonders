@@ -66,6 +66,8 @@
 
 .checkIcon{
     height: 20px;
+    /* border: 1px solid red; */
+    padding-top: 2px;
 }
 
 /* mobile */
