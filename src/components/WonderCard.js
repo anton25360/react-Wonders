@@ -5,6 +5,10 @@ import './WonderCard.css';
 function markSeen(input) {
     alert(input)
     localStorage.setItem(input, 'seen')
+    if (localStorage.getItem(input) === 'seen') {
+        // document.querySelector('.1').innerText = 'verified'
+        document.getElementById('1').innerText = 'verified wonder'
+    }
 }
 
 export class WonderCard extends Component {
@@ -18,7 +22,7 @@ export class WonderCard extends Component {
                 <h2 className='cardLocation'>{this.props.location}</h2>
                 <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>    
-                <p onClick={()=>{markSeen(this.props.num)}} className='cardMark'>Mark as seen.</p>
+                <p onClick={()=>{markSeen(this.props.num)}} className='cardMark' id={this.props.num}>Mark as seen.</p>
             </div>
         )
     }
