@@ -9,15 +9,11 @@ function getVisitedCount() {
     } else if (visitedCount == 0) {
         return 'You haven\'t visited any yet. Get going!'
     } else if (visitedCount == 1) {
-        return ' You have visited ' + visitedCount + ' Wonder. Nice!'
+        return ' You have visited 1 Wonder. Nice!'
     } else {
         let math = visitedCount / 7 * 100
-        return ' You have visited ' + visitedCount + ' Wonders. ('+math.toFixed(0)+'% done)'
+        return ' You have visited ' + visitedCount + ' Wonders ('+math.toFixed(0)+'% done)'
     }
-}
-
-function setMessage(params) {
-
 }
 
 export class WonderCount extends Component {
@@ -25,7 +21,6 @@ export class WonderCount extends Component {
         return (
             <div>
                 <p id='countText'>{getVisitedCount()}</p>
-                <p id='countMsg'>{setMessage()}</p>
             </div>
         )
     }
