@@ -7,7 +7,7 @@ let visitedMsg = 'Visited!'
 function markButton(input) {
     localStorage.setItem(input, 'seen')
     document.getElementById(input).innerText = visitedMsg
-    document.getElementById(input).classList.add("revert");
+    document.getElementById(input).classList.add("visited");
 }
 
 export class WonderCard extends Component {
@@ -16,7 +16,7 @@ export class WonderCard extends Component {
     componentDidMount(){
         if (localStorage.getItem(this.props.num) === 'seen') {
             document.getElementById(this.props.num).innerText = visitedMsg
-            document.getElementById(this.props.num).classList.add("revert");
+            document.getElementById(this.props.num).classList.add("visited");
         }
     }
 
@@ -27,7 +27,7 @@ export class WonderCard extends Component {
                 <h2 className='cardLocation'>{this.props.location}</h2>
                 <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>    
-                <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as visited.</button>
+                <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as visited</button>
             </div>
         )
     }
