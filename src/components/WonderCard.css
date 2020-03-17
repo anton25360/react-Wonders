@@ -49,16 +49,29 @@
 .visited{
     background-image:linear-gradient(135deg,#86A8E7,#91EAE4);
 }
-
+/* 
 .revertBtn {
-    border: 2px solid red;
     float: left;
     font-size: 16px;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
-    background-color: royalblue;
-    color: red;
+    background-color: lightcoral;
+    color: black;
+    visibility: hidden;
+} 
+*/
+
+.revertBtn {
+    /* border: 2px solid red; */
+    float: left;
+    font-size: 16px;
+    /* padding: 5px 10px; */
+    border: none;
+    border-radius: 3px;
+    /* background-color: lightcoral; */
+    height: 30px;
+    color: black;
     visibility: hidden;
 }
 

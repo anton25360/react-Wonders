@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './WonderCard.css';
+import undo from './../res/undo.svg';
+
 
 let visitedMsg = 'Visited'
 
@@ -19,7 +21,6 @@ function removeFromStorage(input) {
     document.getElementById(input).innerText = 'Mark as visited'
     document.getElementById(input).classList.remove("visited");
     document.getElementById(input + 'revert').style.visibility = 'hidden'
-
 }
 
 export class WonderCard extends Component {
@@ -46,7 +47,9 @@ export class WonderCard extends Component {
                 <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>
                 <button onClick={() => { markButton(this.props.num) }} className='markBtn' id={this.props.num}>Mark as visited</button>
-                <button onClick={() => { removeFromStorage(this.props.num) }} class='revertBtn' id={this.props.num + 'revert'}>Revert</button>
+                <img onClick={() => { removeFromStorage(this.props.num) }} class='revertBtn' id={this.props.num + 'revert'} src={undo}/>
+                {/* <button src={undo}></button> */}
+                {/* <img src={undo} /> */}
             </div>
         )
     }
