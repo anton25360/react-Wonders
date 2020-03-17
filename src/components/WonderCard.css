@@ -1,5 +1,4 @@
 .cardContainer{
-    /* color: red; */
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -19,7 +18,6 @@
 
 .cardLocation{
     padding: 5px 0 0 10px;
-    /* border: 2px solid red; */
     text-align: left;
     color: rgb(109, 109, 109);
     font-size: 17px;
@@ -33,14 +31,12 @@
 
 .cardInfo{
     padding: 5px 10px 10px 10px;
-    /* border: 2px solid red; */
     text-align: left;
     color: rgb(109, 109, 109);
     font-size: 17px;
 }
 
 .markBtn{
-    /* background-color: lightgreen; */
     margin: 0 10px 10px 10px;
     float: left;
     font-size: 16px;
@@ -52,12 +48,8 @@
 }
 
 .visited{
-    /* background-color: coral; */
     background-image:linear-gradient(135deg,#86A8E7,#91EAE4);
 }
-
-/* .badge-html{background-image:linear-gradient(135deg,#ff4c9f,#ff7b74)} */
-
 
 /* mobile */
 @media only screen and (max-width: 600px) {
