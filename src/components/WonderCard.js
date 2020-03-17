@@ -4,6 +4,7 @@ import './WonderCard.css';
 
 function markSeen(input) {
     alert(input)
+    localStorage.setItem(input, 'seen')
 }
 
 export class WonderCard extends Component {
