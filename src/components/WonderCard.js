@@ -5,9 +5,14 @@ let visitedMsg = 'Visited'
 
 //marks as seen when user clicks
 function markButton(input) {
+    //NOTE: input is props.num
     localStorage.setItem(input, 'seen')
     document.getElementById(input).innerText = visitedMsg
     document.getElementById(input).classList.add("visited");
+    //show revert button
+    document.getElementById(input + 'revert').style.visibility = 'visible'
+
+
 }
 
 export class WonderCard extends Component {
@@ -17,6 +22,13 @@ export class WonderCard extends Component {
         if (localStorage.getItem(this.props.num) === 'seen') {
             document.getElementById(this.props.num).innerText = visitedMsg
             document.getElementById(this.props.num).classList.add("visited");
+            //show revert button
+            document.getElementById(this.props.num + 'revert').style.visibility = 'visible'
+
+        } else {
+            //hide revert button
+            document.getElementById(this.props.num + 'revert').style.visibility = 'hidden'
+
         }
     }
 
@@ -28,6 +40,7 @@ export class WonderCard extends Component {
                 <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>    
                 <button onClick={()=>{markButton(this.props.num)}} className='markBtn' id={this.props.num}>Mark as visited</button>
+                <button class='revertBtn' id={this.props.num + 'revert'}>Revert</button>
             </div>
         )
     }
