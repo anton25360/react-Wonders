@@ -13,9 +13,8 @@ export class WonderCard extends Component {
     componentDidMount(){
         console.log(this.props.num);
 
-        if (localStorage.getItem(input) === 'seen') {
-            // document.querySelector('.1').innerText = 'verified'
-            document.getElementById(input).innerText = 'verified wonder'
+        if (localStorage.getItem(this.props.num) === 'seen') {
+            document.getElementById(this.props.num).innerText = 'verified wonder'
         }
     }
 
