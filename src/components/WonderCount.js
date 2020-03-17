@@ -3,12 +3,11 @@ import './WonderCount.css';
 
 function getVisitedCount() {
     var visitedCount = Object.keys(localStorage).length
-    // document.getElementById('countMsg').innerText = 'hahahah'
-    if (visitedCount == 7) {
+    if (visitedCount === 7) {
         return 'You have visited all 7 Wonders. Congratulations!'
-    } else if (visitedCount == 0) {
+    } else if (visitedCount === 0) {
         return 'You haven\'t visited any yet. Get going!'
-    } else if (visitedCount == 1) {
+    } else if (visitedCount === 1) {
         return ' You have visited 1 Wonder. Nice!'
     } else {
         let math = visitedCount / 7 * 100
