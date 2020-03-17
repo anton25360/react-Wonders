@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 import './WonderCard.css';
 
-
+//marks as seen whenuser clicks
 function markSeen(input) {
-    alert(input)
     localStorage.setItem(input, 'seen')
-    if (localStorage.getItem(input) === 'seen') {
-        // document.querySelector('.1').innerText = 'verified'
-        document.getElementById('1').innerText = 'verified wonder'
-    }
+    document.getElementById(input).innerText = 'verified wonder'
 }
 
 export class WonderCard extends Component {
 
+    //marks as seen if 'seen' propery exists onLoad
+    componentDidMount(){
+        console.log(this.props.num);
 
+        if (localStorage.getItem(input) === 'seen') {
+            // document.querySelector('.1').innerText = 'verified'
+            document.getElementById(input).innerText = 'verified wonder'
+        }
+    }
 
     render() {
         return (
