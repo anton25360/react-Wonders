@@ -16,12 +16,9 @@ function markButton(input) {
 //delete localstorage (num : seen)
 function removeFromStorage(input) {
     localStorage.removeItem(input)
-
     document.getElementById(input).innerText = 'Mark as visited'
     document.getElementById(input).classList.remove("visited");
-    //show revert button
     document.getElementById(input + 'revert').style.visibility = 'hidden'
-    // alert('hehe')
 
 }
 
