@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './WonderCard.css';
 
-let visitedMsg = 'Visited!'
+let visitedMsg = 'Visited'
 
 //marks as seen when user clicks
 function markButton(input) {
