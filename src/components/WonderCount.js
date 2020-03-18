@@ -16,6 +16,19 @@ function getVisitedCount() {
 }
 
 export class WonderCount extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {refresh: 'one'};
+      }
+
+      componentDidMount(){
+          setTimeout(()=>{this.setState({refresh:'two'})}, 1000)
+      }
+
+      componentDidUpdate(){
+          setTimeout(()=>{this.setState({refresh:'three'})}, 1000)
+      }
+
     render() {
         return (
             <div>
