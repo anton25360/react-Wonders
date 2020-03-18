@@ -28,13 +28,13 @@ function App() {
   return (
     <div className="App">
       <IntroCard /><br/>
-      <WonderCard num='1' visited={false} name='Taj Mahal' location='India' imgLink={taj} info={content[0]}/><br/>
-      <WonderCard num='2' visited={false} name='Colosseum' location='Italy' imgLink={colosseum} info={content[1]}/><br/>
-      <WonderCard num='3' visited={false} name='Chichen Itza' location='Mexico' imgLink={chichen} info={content[2]}/><br/>
-      <WonderCard num='4' visited={false} name='Machu Picchu' location='Peru' imgLink={machu} info={content[3]}/><br/>
-      <WonderCard num='5' visited={false} name='Christ the Redeemer' location='Brazil' imgLink={christ} info={content[4]}/><br/>
-      <WonderCard num='6' visited={false} name='Petra' location='Jordan' imgLink={petra} info={content[5]}/><br/>
-      <WonderCard num='7' visited={false} name='Great Wall of China' location='China' imgLink={great} info={content[6]}/>
+      <WonderCard num='1' name='Taj Mahal' location='India' imgLink={taj} info={content[0]}/><br/>
+      <WonderCard num='2' name='Colosseum' location='Italy' imgLink={colosseum} info={content[1]}/><br/>
+      <WonderCard num='3' name='Chichen Itza' location='Mexico' imgLink={chichen} info={content[2]}/><br/>
+      <WonderCard num='4' name='Machu Picchu' location='Peru' imgLink={machu} info={content[3]}/><br/>
+      <WonderCard num='5' name='Christ the Redeemer' location='Brazil' imgLink={christ} info={content[4]}/><br/>
+      <WonderCard num='6' name='Petra' location='Jordan' imgLink={petra} info={content[5]}/><br/>
+      <WonderCard num='7' name='Great Wall of China' location='China' imgLink={great} info={content[6]}/>
       <WonderCount />
     </div>
   );
