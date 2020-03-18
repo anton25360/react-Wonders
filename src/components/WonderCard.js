@@ -47,7 +47,7 @@ export class WonderCard extends Component {
                 <h1 className='cardName'>{this.props.name}</h1>
                 <p className='cardInfo'>{this.props.info}</p>
                 <button onClick={() => { markButton(this.props.num) }} className='markBtn' id={this.props.num}>Mark as visited</button>
-                <img onClick={() => { removeFromStorage(this.props.num) }} class='revertBtn' id={this.props.num + 'revert'} src={undo} alt=''/>
+                <img onClick={() => { removeFromStorage(this.props.num) }} className='revertBtn' id={this.props.num + 'revert'} src={undo} alt=''/>
             </div>
         )
     }
