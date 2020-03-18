@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-wonders/static/css/main.d8cf0fe7.chunk.css",
+    "main.js": "/react-wonders/static/js/main.1026cb3d.chunk.js",
+    "main.js.map": "/react-wonders/static/js/main.1026cb3d.chunk.js.map",
+    "runtime-main.js": "/react-wonders/static/js/runtime-main.432df6cb.js",
+    "runtime-main.js.map": "/react-wonders/static/js/runtime-main.432df6cb.js.map",
+    "static/js/2.e674c527.chunk.js": "/react-wonders/static/js/2.e674c527.chunk.js",
+    "static/js/2.e674c527.chunk.js.map": "/react-wonders/static/js/2.e674c527.chunk.js.map",
+    "index.html": "/react-wonders/index.html",
+    "precache-manifest.445a9fd8c6c874a2cbc5e70cdf4c972f.js": "/react-wonders/precache-manifest.445a9fd8c6c874a2cbc5e70cdf4c972f.js",
+    "service-worker.js": "/react-wonders/service-worker.js",
+    "static/css/main.d8cf0fe7.chunk.css.map": "/react-wonders/static/css/main.d8cf0fe7.chunk.css.map",
+    "static/js/2.e674c527.chunk.js.LICENSE.txt": "/react-wonders/static/js/2.e674c527.chunk.js.LICENSE.txt",
+    "static/media/chichen.jpg": "/react-wonders/static/media/chichen.716425e5.jpg",
+    "static/media/christ.jpg": "/react-wonders/static/media/christ.6fca6cec.jpg",
+    "static/media/colosseum.jpg": "/react-wonders/static/media/colosseum.6b329f5f.jpg",
+    "static/media/great.jpg": "/react-wonders/static/media/great.6557f359.jpg",
+    "static/media/machu.jpg": "/react-wonders/static/media/machu.5aa2d9d7.jpg",
+    "static/media/petra.jpg": "/react-wonders/static/media/petra.ee2214d4.jpg",
+    "static/media/taj.jpg": "/react-wonders/static/media/taj.d4b3b7cf.jpg",
+    "static/media/undo.svg": "/react-wonders/static/media/undo.b55b35db.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.432df6cb.js",
+    "static/js/2.e674c527.chunk.js",
+    "static/css/main.d8cf0fe7.chunk.css",
+    "static/js/main.1026cb3d.chunk.js"
+  ]
+}
